@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Yukiko kano's Portfolio</title>
+    <style type="text/css">
+        body {
+           background-color: #fafae7; 
+           margin: 0;
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh;
+        }
+        
+        div.header{
+             background-image: url("https://cdn.pixabay.com/photo/2020/07/11/08/22/hydrangeas-5393155_1280.jpg");
+             background-repeat: no-repeat;
+             background-size: cover;
+             height: 200px;
+             width: auto;
+        }
+        div.title {
+            text-align: center;
+            height: 100px;
+            width: auto; 
+            line-height: 225px;
+            font-size: 50px;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+
+        }
+        h2 {
+            text-align: center;
+            background-color: #CCCCCC;
+            padding: 10px;
+            margin: 5%;
+            border: 1px solid;
+            border-color: #171785;
+            height: 70px;
+            width: auto;
+            color: #333333;
+            
+        }
+        section {
+            text-align: justify;
+            padding: 40px;
+            margin: 0 auto 30px;
+           width: 750px;
+           border-radius: 20px;
+           border: 2px solid #ccc;
+        }
+        h1 {
+            text-align: center;
+            margin: 10 auto;
+            font-size: 20px;
+            color: #333333;
+        }
+        div.Footer {  
+            background: #333333;
+            text-align: center;
+            color: #ffffff;
+            height: 40px;
+        }  
+        div.T1 {
+            text-align: right;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+          setInterval(function() {
+            var dd = new Date();
+            document.getElementById("T1").innerHTML = dd.toLocaleString();
+          }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Yukiko kano's Portfolio</div>
+    </div>
+ 
+    <h1>
+        <a href="#title1"> Profile </a> / <a href="#title2"> Skill </a> / <a href="#title3"> Performance </a> / <a href="#title4"> Contact </a>
+    </h1>
+    <h2><a id="title1"> Profile </a></h2>
+    <section>
+        <p>
+            平成12年生まれ20歳のKano Yukikoと申します。社会人歴1年目、エンジニア志望です。短大で、IT分野に触れる機会がありそこから、SE職を目指しました。<br>
+    　      今できることはofficeなどの一般的なツールが主となりますが、SQL、Unix、JavaScriptなどを研修を通して学んでいます。まだまだ、基礎を固めているところではありますが立派なエンジニアになれるように頑張っていこうと思っています。
+        </p>
+    </section>
+    <h2><a id="title2"> Skill </a></h2>
+    <section>
+        <p>
+            <b>言語</b> <br>
+            ・HTML＆CSS<br>
+            ・JavaScrip<br>
+            ・SQL<br>
+        </p>
+        <p>
+            <b>OS</b> <br>
+            ・Windows10 Home<br>
+        </p>
+        <p>
+            <b>ツール</b> <br>
+            ・Git<br>
+        </p>
+        <p>
+            <b>保有資格</b> <br>
+            現在、資格取得勉強中<br>
+        </p>
+    </section>
+    <h2><a id="title3"> Performance </a></h2>
+    <section>
+        <p>
+            実績追加予定
+        </p>
+    </section> 
+    <h2><a id="title4"> Contact </a></h2>
+    <section>
+        <p>
+            お問い合わせ先となります。お気軽にご連絡ください。<br>
+            →<a href="#">お問い合わせ</a><br>
+        </p>
+    </section>
+    <div id="T1"></div>
+    <div class="Footer">
+        <p>&copy;Yukiko kano.2021.</p>
+    </div>
+    
+    <script>
+        alert("いらっしゃいませ。ご拝読ありがとうございます。");
+    </script>
+    
+</body>
+</html>
